@@ -3,11 +3,32 @@
     "type": "module",
     "scripts": {
         "dev": "vite",
-        "build": "vite build"
+        "start": "node resources/ws/app.js",
+        "build": "vite build && vite build --ssr"
     },
     "devDependencies": {
-        "axios": "^1.1.2",
+        "@protonemedia/laravel-splade": "^1.4.15",
+        "@tailwindcss/forms": "^0.5.2",
+        "@tailwindcss/typography": "^0.5.2",
+        "@vitejs/plugin-vue": "^4.0.0",
+        "autoprefixer": "^10.4.7",
+        "axios": "^1.4.0",
         "laravel-vite-plugin": "^0.7.5",
-        "vite": "^4.0.0"
+        "postcss": "^8.4.14",
+        "tailwindcss": "^3.3.0",
+        "vite": "^4.0.0",
+        "vue": "^3.2.37"
+    },
+    "dependencies": {
+        "@adiwajshing/baileys": "^5.0.0",
+        "@adiwajshing/keyed-db": "^0.2.4",
+        "cors": "^2.8.5",
+        "dotenv": "^16.3.1",
+        "express": "^4.18.2",
+        "express-validator": "^7.0.1",
+        "link-preview-js": "^3.0.4",
+        "node-cleanup": "^2.1.2",
+        "qrcode": "^1.5.3",
+        "qrcode-terminal": "^0.12.0"
     }
 }
